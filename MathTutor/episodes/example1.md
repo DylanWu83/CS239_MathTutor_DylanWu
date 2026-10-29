@@ -17,14 +17,14 @@ This example is **hypothetical**. It follows the implemented workflow for a lear
    - `skill`: `two-digit addition without regrouping`
    - `rationale`: `New learner; check number sense before moving on.`
    - `target_misconception`: `null`
-3. **Application.** Validates the plan (`LessonPlan`, including P1/P2). Calls `generate_question(plan)`.
+3. **Application.** Validates the plan against the expected output and configured learning constraints (P5). Only an accepted plan is passed to `generate_question(plan)`.
 4. **Math Question Generator.** Writes a four-choice item, for example stem `What is 34 + 25?` with choices `59`, `51`, `69`, `58`, `correct_answer` `59`, and distractor notes for place-value slips.
-5. **Application.** Shuffles the four choices, recomputes `correct_index` from `correct_answer` (P3), and displays the stem and choices A–D. Shows the plan rationale as “Why this question.”
+5. **Application.** Shuffles the four choices, recomputes `correct_index` from `correct_answer`, and displays the stem and choices A–D. Shows the plan rationale as “Why this question.”
 
 ## Policy connection
 
-P1, P2, P3, P5, P6.
+P1, P2, P3, P4, P5, P6.
 
 ## Expected outcome
 
-The learner sees one original multiple-choice item on whole-number arithmetic at difficulty 2. No diagnosis is produced yet. The profile on disk is unchanged until Submit. The curriculum agent does not invent a topic outside the canonical list, and the question generator does not call the diagnostic agent (no delegation).
+The learner sees one original multiple-choice item on whole-number arithmetic at difficulty 2. No diagnosis is produced yet. The profile remains unchanged until the application processes a submitted answer. The curriculum agent proposes a plan, the generator receives only that plan, and neither agent delegates or accesses learner storage.
