@@ -2,7 +2,7 @@
 
 Local multi-agent math tutor: **CrewAI** agents talk to **Ollama** on your machine. The Streamlit UI runs an adaptive four-choice practice loop and saves a learner profile on disk.
 
-Application description files for this project live under DylanWu-MathTutor-407000996-requirements/MathTutor/ (`app.md`, `policy.md`, `tools.md`, `agents/`, `episodes/`). This README covers setup, dependencies, and how to run the implementation.
+Application description files for this project live under MathTutor/ (`app.md`, `policy.md`, `tools.md`, `agents/`, `episodes/`). This README covers setup, dependencies, and how to run the implementation.
 
 ## External requirements
 
