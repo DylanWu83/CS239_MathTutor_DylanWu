@@ -1,0 +1,11 @@
+.venv/
+.tmp_specs/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+data/
+.streamlit/secrets.toml
+.crewai/
+.DS_Store
+Thumbs.db
