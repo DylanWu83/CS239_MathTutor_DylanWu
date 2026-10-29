@@ -2,8 +2,6 @@
 
 Local multi-agent study app: **CrewAI** agents talk to **Ollama** on your machine and run an adaptive multiple-choice math tutor.
 
-This repository is laid out for the CS239 submission format.
-
 ## Application description (requirements archive)
 
 | File | Contents |
@@ -17,8 +15,6 @@ This repository is laid out for the CS239 submission format.
 ## Source and tests (whole archive)
 
 Setup, dependencies, run instructions, example usage, and external requirements are in [`src/README.md`](src/README.md).
-
-Test-case descriptions are in [`tests/README.md`](tests/README.md).
 
 ```
 app.py                 Streamlit UI
